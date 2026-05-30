@@ -1,0 +1,14 @@
+node_modules/
+dist/
+coverage/
+
+.DS_Store
+.env
+.env.*
+!.env.example
+
+*.log
+*.tsbuildinfo
+report.json
+package-health-report.html
+npm-package-doctor-*.tgz

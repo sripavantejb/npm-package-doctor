@@ -1,0 +1,64 @@
+{
+  "name": "npm-package-doctor",
+  "version": "0.1.0",
+  "description": "Analyze npm dependencies and generate package health, security, and maintainability reports.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Sri Pavan Tej Balam",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sripavantejb/npm-package-doctor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sripavantejb/npm-package-doctor/issues"
+  },
+  "homepage": "https://github.com/sripavantejb/npm-package-doctor#readme",
+  "bin": {
+    "npm-package-doctor": "./dist/cli.js"
+  },
+  "main": "./dist/cli.js",
+  "types": "./dist/types/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "docs"
+  ],
+  "keywords": [
+    "npm",
+    "security",
+    "dependencies",
+    "package-health",
+    "supply-chain",
+    "cli",
+    "nodejs",
+    "typescript",
+    "developer-tools"
+  ],
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "scripts": {
+    "dev": "tsx src/cli.ts scan",
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "clean": "rm -rf dist coverage *.tsbuildinfo",
+    "prepublishOnly": "npm run typecheck && npm test && npm run build"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "figlet": "^1.8.0",
+    "semver": "^7.6.3"
+  },
+  "devDependencies": {
+    "@types/figlet": "^1.7.0",
+    "@types/node": "^22.10.2",
+    "@types/semver": "^7.5.8",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^3.2.4"
+  }
+}
