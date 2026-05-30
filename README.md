@@ -1,7 +1,9 @@
 # npm-package-doctor
 
 [![CI](https://github.com/sripavantejb/npm-package-doctor/actions/workflows/ci.yml/badge.svg)](https://github.com/sripavantejb/npm-package-doctor/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![npm version](https://img.shields.io/npm/v/npm-package-doctor.svg)](https://www.npmjs.com/package/npm-package-doctor)
+[![npm downloads](https://img.shields.io/npm/dm/npm-package-doctor.svg)](https://www.npmjs.com/package/npm-package-doctor)
+[![License: MIT](https://img.shields.io/npm/l/npm-package-doctor.svg)](LICENSE)
 
 A CLI that scans npm dependencies and generates package health, security, and maintainability reports.
 
