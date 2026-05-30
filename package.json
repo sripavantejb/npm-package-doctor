@@ -14,10 +14,10 @@
   },
   "homepage": "https://github.com/sripavantejb/npm-package-doctor#readme",
   "bin": {
-    "npm-package-doctor": "./dist/cli.js"
+    "npm-package-doctor": "dist/cli.js"
   },
-  "main": "./dist/cli.js",
-  "types": "./dist/types/index.d.ts",
+  "main": "dist/cli.js",
+  "types": "dist/types/index.d.ts",
   "files": [
     "dist",
     "README.md",
