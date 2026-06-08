@@ -1,9 +1,0 @@
-src/
-tests/
-.github/
-docs/**/*.draft.md
-coverage/
-*.log
-*.tsbuildinfo
-report.json
-package-health-report.html

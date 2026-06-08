@@ -1,0 +1,19 @@
+/* Plan page — wizard lives in ds-main below global chrome */
+
+.ds-page--plan-wizard .ds-main {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
+  padding: 0;
+}
+
+.ds-page--plan-wizard.ds-page--mobile-nav .ds-main {
+  min-height: calc(100svh - var(--layout-header-height, 72px));
+  padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px));
+}
+
+.ds-page--plan-wizard .pil-wizard--embedded {
+  min-height: 0;
+  flex: 1;
+}
